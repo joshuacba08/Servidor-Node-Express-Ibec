@@ -4,13 +4,14 @@
   "description": "Api rest con node y express",
   "main": "app.js",
   "scripts": {
-    "start":"node src/app.js",
-    "dev":"nodemon src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "author": "josue oroya",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.21"
