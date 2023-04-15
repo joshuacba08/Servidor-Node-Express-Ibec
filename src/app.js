@@ -1,5 +1,8 @@
-// importo express
 const express = require('express');
+const dbConnection = require('./db/db.config');
+
+// conectar base de datos
+dbConnection();
 
 // creo una instancia de express y la guardo en app
 const app = express();
