@@ -14,6 +14,7 @@ app.use( express.json() );
 // creo mi grupo de rutas
 app.use( '/api/v1/auth',require('./routes/auth.routes') );
 
+// TODO: CRUD: Products
 
 // inicializacion de nuestro server escuchando en el puerto 8080
 app.listen( 8080 , ()=>{
