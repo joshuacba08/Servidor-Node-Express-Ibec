@@ -1,4 +1,10 @@
+// import express
 const express = require('express');
+
+// configuracion de variables de entorno
+require('dotenv').config()
+
+// importo la conexion a la base de datos
 const dbConnection = require('./db/db.config');
 
 // conectar base de datos
@@ -17,7 +23,9 @@ app.use('/api/v1/products', require('./routes/products.routes'))
 
 // TODO: CRUD: Products
 
+const PORT = process.env.PORT || 8080;
+
 // inicializacion de nuestro server escuchando en el puerto 8080
-app.listen( 8080 , ()=>{
+app.listen( PORT , ()=>{
     console.log('Servidor corriendo en puerto 8080')
 })
