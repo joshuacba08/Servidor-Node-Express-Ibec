@@ -12,7 +12,8 @@ app.use( express.json() );
 
 
 // creo mi grupo de rutas
-app.use( '/api/v1/auth',require('./routes/auth.routes') );
+app.use( '/api/v1/auth', require('./routes/auth.routes') );
+app.use('/api/v1/products', require('./routes/products.routes'))
 
 // TODO: CRUD: Products
 
