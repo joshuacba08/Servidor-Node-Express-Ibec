@@ -27,7 +27,7 @@ const createUser = async (req, res) => {
 const login = async (req, res) => {
     try {
         // primero consultaremos si el usuario existe a través de su email
-        const userInDb = await User.findOne({email: req.body.email});
+        const userInDb = await User.findOne({email: req.body.email}); // si no existe, entonces userInDb será null
         if(!userInDb) return res.status(404).json({
             ok:false,
             error: 'Usuario no encontrado'

@@ -1,5 +1,7 @@
 // import express
 const express = require('express');
+const cors = require('cors');
+
 
 // configuracion de variables de entorno
 require('dotenv').config()
@@ -12,6 +14,9 @@ dbConnection();
 
 // creo una instancia de express y la guardo en app
 const app = express();
+
+// configuracion de cors all origin
+app.use(cors()); // para que cualquier cliente pueda hacer peticiones a mi servidor
 
 // lectura y parseo del body
 app.use( express.json() );
