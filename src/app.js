@@ -1,10 +1,10 @@
 // import express
 const express = require('express');
-const cors = require('cors');
+const cors = require('cors'); // importo cors
 
 
 // configuracion de variables de entorno
-require('dotenv').config()
+require('dotenv').config() // para que lea las variables de entorno
 
 // importo la conexion a la base de datos
 const dbConnection = require('./db/db.config');
